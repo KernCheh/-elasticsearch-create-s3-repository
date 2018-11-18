@@ -1,4 +1,4 @@
-# Create S3 Repository on Elasticsearch
+# Configure S3 Repository on Elasticsearch
 
 ## Environment Variables
 
