@@ -23,7 +23,6 @@ To install dependencies:
 
 ```
 dep ensure
-
 ```
 
 All environment variables are housed in `config.go`
