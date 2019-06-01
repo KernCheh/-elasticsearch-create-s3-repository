@@ -8,6 +8,7 @@
 | `AWS_ACCESS_KEY_ID` | y | `-` | AWS Access Key used to communicate with S3 bucket  |
 | `AWS_SECRET_ACCESS_KEY` | y | `-` | AWS Secret Key used to communicate with S3 bucket  |
 | `APP_ENV` | n | `development` | Environment deployed against  |
+| `BUCKET_NAME` | n | `sephora-k8s-logging` | Bucket Name to link to  |
 
 ## Usage
 
