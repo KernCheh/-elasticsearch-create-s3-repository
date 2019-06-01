@@ -7,11 +7,8 @@ import (
 )
 
 type Config struct {
-	ELASTICSEARCH_URL     string `env:"ELASTICSEARCH_URL" envDefault:"http://127.0.0.1:9200"`
-	AWS_ACCESS_KEY_ID     string `env:"AWS_ACCESS_KEY_ID,required"`
-	AWS_SECRET_ACCESS_KEY string `env:"AWS_SECRET_ACCESS_KEY,required"`
-	APP_ENV               string `env:"APP_ENV" envDefault:"development"`
-	BUCKET_NAME           string `env:"BUCKET_NAME" envDefault:"sephora-k8s-logging"`
+	ELASTICSEARCH_URL string `env:"ELASTICSEARCH_URL" envDefault:"http://127.0.0.1:9200"`
+	BUCKET_NAME       string `env:"BUCKET_NAME" envDefault:"sephora-k8s-logging"`
 }
 
 var instance *Config

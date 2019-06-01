@@ -5,8 +5,6 @@
  Name | Required | Default | Description |
 |------|----------|---------|-------------|
 | `ELASTICSEARCH_URL` | n | `http://127.0.0.1:9200` | Elasticsearch endpoint to target  |
-| `AWS_ACCESS_KEY_ID` | y | `-` | AWS Access Key used to communicate with S3 bucket  |
-| `AWS_SECRET_ACCESS_KEY` | y | `-` | AWS Secret Key used to communicate with S3 bucket  |
 | `APP_ENV` | n | `development` | Environment deployed against  |
 | `BUCKET_NAME` | n | `sephora-k8s-logging` | Bucket Name to link to  |
 
@@ -17,6 +15,9 @@
 ```
 
 Please remember to set the above environment variables
+
+Sourcing in AWS keys as environment variables are no longer supported.
+Please refer to https://www.elastic.co/guide/en/elasticsearch/plugins/current/repository-s3-client.html instead
 
 ## Contributing
 

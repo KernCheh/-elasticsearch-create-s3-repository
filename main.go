@@ -26,10 +26,8 @@ func main() {
 	sns := client.SnapshotCreateRepository(config.GetInstance().BUCKET_NAME)
 	sns.Type("s3")
 	sns.Settings(map[string]interface{}{
-		"bucket":     config.GetInstance().BUCKET_NAME,
-		"region":     "ap-southeast-1",
-		"access_key": config.GetInstance().AWS_ACCESS_KEY_ID,
-		"secret_key": config.GetInstance().AWS_SECRET_ACCESS_KEY,
+		"bucket": config.GetInstance().BUCKET_NAME,
+		"region": "ap-southeast-1",
 	})
 
 	resp, err := sns.Do(ctx)
